@@ -1,0 +1,351 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Croissant One', sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.OrderPage_NavBar {
+	width: 100%;
+	height: 4rem;
+	background-color: green;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.OrderPage_logo {
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+}
+
+.OrderPage_navigate,
+.OrderPage_cart {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.OrderPage_navigate-items {
+	color: white;
+	opacity: 0.9;
+	padding-right: 10rem;
+}
+
+.OrderPage_cart-items {
+	opacity: 0.9;
+	color: white;
+	padding-right: 6rem;
+}
+
+.OrderPage_cart-user {
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	color: white;
+}
+
+.OrderPage_angle-down {
+	vertical-align: middle;
+}
+
+.OrderPage_Summary {
+	width: 100%;
+	height: 7rem;
+	background-color: white;
+	border: 1px solid #d8d8d8;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.OrderPage_Summary_Order-details {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%;
+	padding: 1% 5%;
+	font-size: 12px;
+	color: gray;
+}
+
+.OrderPage_Summary_Angle-right {
+	color: gray;
+	padding: 0.25% 0 0 0.5%;
+}
+
+.OrderPage_Summary-order-no {
+	text-decoration: underline;
+	color: gray;
+	font-size: 12px;
+	padding-left: 0.5%;
+}
+
+.OrderPage_Summary_Order-approve {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0% 5% 2% 5%;
+}
+
+.OrderPage_Summary_Order-approve-no {
+	width: 60%;
+	height: 2rem;
+	text-align: left;
+	font-size: 14px;
+	font-weight: 700;
+	color: black;
+}
+
+.OrderPage_Summary_Order-approve-button {
+	width: 40%;
+	height: 2rem;
+	padding: 0 0 5% 0;
+}
+
+.OrderPage_Summary_Back-button {
+	width: 6rem;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: white;
+	border: 1px solid green;
+	color: green;
+	cursor: pointer;
+	margin-right: 4%;
+	font-weight: 600;
+}
+
+.OrderPage_Summary_Approve-order {
+	width: 12rem;
+	height: 2rem;
+	border-radius: 10px;
+	border: none;
+	background-color: green;
+	color: white;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.OrderPage_Main-page {
+	padding: 2%;
+}
+
+.OrderPage_Order-summary {
+	width: 90%;
+	height: 8rem;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	box-shadow: 0px 0px 5px #10070729;
+	border-radius: 5px;
+	margin: 0 0 0 5%;
+}
+
+.OrderPage_summary-list {
+	display: flex;
+	flex-direction: row;
+}
+
+.item {
+	width: 17%;
+	height: 8rem;
+	padding: 2%;
+	text-align: left;
+	border-right: 1px solid #ccc;
+}
+
+.last-item {
+	border-right: none;
+}
+
+.OrderPage_Summary-title {
+	font-size: 10px;
+	display: flex;
+	flex-direction: flex-start;
+	margin-bottom: 2%;
+}
+
+.OrderPage_Summary-description {
+	font-size: 12px;
+	display: flex;
+	flex-direction: flex-start;
+}
+
+.OrderPage_Summary-order-list {
+	width: 90%;
+	height: 35rem;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	box-shadow: 0px 0px 5px #10070729;
+	border-radius: 5px;
+	margin: 2% 0 0 5%;
+}
+
+.OrderPage_Summary-Search-add-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.OrderPage_Summary-search-bar {
+	height: 3rem;
+	display: flex;
+	align-items: center;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	padding: 10px;
+	width: 35%;
+	margin: 2% 0 0 5%;
+}
+
+.OrderPage_Summary-search-bar-input {
+	border: none;
+	outline: none;
+	flex: 1;
+	border-radius: 5px;
+}
+
+.OrderPage_Summary-search-icon {
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.OrderPage_Summary-add-btn-print-icon {
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	height: 6rem;
+	align-items: center;
+}
+
+.OrderPage_Summary-add-btn {
+	width: 8rem;
+	height: 2rem;
+	color: green;
+	font-size: 12px;
+	cursor: pointer;
+	border-radius: 15px;
+	background-color: white;
+	border: 1px solid green;
+}
+
+.OrderPage_Summary-print-icon {
+	width: 1.5rem;
+	height: 1.5rem;
+	color: green;
+	cursor: pointer;
+	font-weight: lighter;
+}
+
+.OrderPage_Summary-order-list-container {
+	width: 90%;
+	height: 20rem;
+	margin: 0 0 0 5%;
+}
+
+.OrderPage_Summary-order-list-heading {
+	display: flex;
+	flex-direction: row;
+	width: 95%;
+	height: 2rem;
+	border: 2px solid #d8d8d8;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.order-list-heading-product-width {
+	width: 20%;
+	text-align: center;
+	padding-top: 0.3rem;
+	color: gray;
+}
+
+.order-list-heading-brand {
+	width: 12%;
+	color: gray;
+	text-align: center;
+	padding-top: 0.3rem;
+}
+
+.order-list-heading-status {
+	width: 32%;
+	color: gray;
+	text-align: center;
+	padding-top: 0.3rem;
+}
+
+.Add_Item_title {
+	text-align: center;
+	margin-bottom: 1%;
+}
+
+.Add_Cart_Item_Dialog_Box {
+	display: flex;
+	flex-direction: column;
+	margin: 12% 5%;
+	padding: 1%;
+	width: 90%;
+	height: 20rem;
+	align-content: center;
+	align-items: center;
+	border: 1px solid #10070729;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	box-shadow: 0px 0px 5px #10070729;
+	border-radius: 10px;
+}
+
+.Add_Item_btn {
+	width: 7rem;
+	border-radius: 5px;
+	margin-right: 2rem;
+	color: green;
+	border: 1px solid green;
+}
+
+.Cancel_Item_btn {
+	width: 7rem;
+	border-radius: 5px;
+	margin-right: 2rem;
+	color: orangered;
+	border: 1px solid orangered;
+}
+
+.order-list-heading-status-tick,
+.order-list-heading-status-cancel,
+.order-list-heading-status-edit {
+	width: 1.5rem;
+	height: 1rem;
+	cursor: pointer;
+	display: flex;
+	padding-bottom: 2%;
+}
+
+.underline-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.underline-table td {
+	border-bottom: 1px solid #ccc;
+	padding: 8px;
+	text-align: center;
+}
